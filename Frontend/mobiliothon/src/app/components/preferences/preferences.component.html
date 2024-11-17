@@ -1,0 +1,16 @@
+<div class="preferences">
+    <h2>User Preferences</h2>
+    <form (ngSubmit)="savePreferences()">
+      <label for="seatPosition">Seat Position:</label>
+      <input id="seatPosition" [(ngModel)]="preferences.seatPosition" name="seatPosition" required>
+      
+      <label for="temperature">Temperature:</label>
+      <input id="temperature" type="number" [(ngModel)]="preferences.temperature" name="temperature" required>
+      
+      <label for="drivingMode">Driving Mode:</label>
+      <input id="drivingMode" [(ngModel)]="preferences.drivingMode" name="drivingMode" required>
+      
+      <button type="submit">Save Preferences</button>
+    </form>
+  </div>
+  

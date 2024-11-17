@@ -1,0 +1,11 @@
+<div class="maintenance">
+    <h2>Predict Maintenance Cost</h2>
+    <form (ngSubmit)="predictMaintenance()">
+      <label for="mileage">Mileage:</label>
+      <input id="mileage" type="number" [(ngModel)]="mileage" name="mileage" required>
+      <button type="submit">Predict</button>
+    </form>
+  
+    <p *ngIf="maintenanceCost">Predicted Maintenance Cost: {{ maintenanceCost }}</p>
+  </div>
+  
